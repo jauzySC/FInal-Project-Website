@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container, .welcome-container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: box-shadow 0.3s; /* Smooth transition for shadow */
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow on focus */
+}
+
+button {
+    background-color: #28a745; /* Dark green */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #5cb85c; /* Lighter green on hover */
+}
+
+.welcome-container {
+    text-align: center;
+}

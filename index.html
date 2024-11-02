@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="login-container">
+        <img src="person.jpg" alt="Logo" class="logo">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <div id="error-message" style="color: red; display: none;"></div>
+        <div id="Sucess-message" style="color: green; display: none;"></div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#loginForm').on('submit', function(e) {
+                e.preventDefault();
+                const username = $('#username').val();
+                const password = $('#password').val();
+
+                // Simulasi validasi login
+                if (username === 'admin' && password === 'password') {
+$('#Sucess-message').text('Selamat Datang!').show();
+                } else {
+                    $('#error-message').text('Username atau Password salah!').show();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
