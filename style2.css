@@ -42,7 +42,7 @@ input[type="text"]:focus, input[type="password"]:focus {
 }
 
 button {
-    background-color: #28a745; /* Dark green */
+    background-color: yellow; /* Dark green */
     color: white;
     padding: 10px;
     border: none;
@@ -52,7 +52,7 @@ button {
 }
 
 button:hover {
-    background-color: #5cb85c; /* Lighter green on hover */
+    background-color: lightyellow; /* Lighter green on hover */
 }
 
 .welcome-container {
